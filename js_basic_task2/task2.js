@@ -1,4 +1,4 @@
-let basicPrice = 10000, year = 2017, km = 70000, security = true , elektro = true , climate = false;
+let basicPrice = 10000, year = 2019, km = 49000, security = true , elektro = false , climate = true;
 let newSum = 0;
 if(year>=2019&&year<=2020){
     newSum = basicPrice/100*10;
@@ -15,7 +15,7 @@ if(climate == true){
 if(elektro == true ){
     newSum += (basicPrice/100*15);
 }
-console.log("Base price was: " + basicPrice + "New price is " + newSum)
+console.log("Base price was: " + basicPrice + ", New price is " + (newSum+basicPrice))
 
 //!не получилось :(
 /*let auto = {

@@ -1,9 +1,16 @@
-let a = [6,2,1,8,10];
-let b = [1,1,11,2,3];
-let arr=[];
-for(let i = 0; i<a.length;i++){
-    if(a[i]<a[i+1]||a[i]>a[i+1]||a[i]&&true){
-        arr = a.push(i);
-    }
+let arr = [6, 4, 11, 1, 10];
+let max = arr[0];
+let min = arr[0];
+let sumOfElements = 0;
+let totalSum = 0;
+for(let i=0;i<arr.length;i++){
+  if(max<arr[i]){
+    max = arr[i];
+  }
+  if(min>arr[i]){
+    min=arr[i];
+  }
+  sumOfElements+=arr[i];
 }
-console.log(arr);
+totalSum = sumOfElements-max-min;
+console.log(totalSum);
