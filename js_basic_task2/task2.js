@@ -1,4 +1,4 @@
-let basicPrice = 10000, year = 2019, km = 49000, hasSecurity = Boolean , hasElektro = Boolean , hasClimate = Boolean;
+let basicPrice = 10000, year = 2019, km = 49000, hasSecurity = true , hasElektro = false , hasClimate = true;
 let newSum = 0;
 if(year>=2019&&year<=2020){
     newSum = basicPrice/100*10;
