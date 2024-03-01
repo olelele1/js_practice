@@ -1,4 +1,4 @@
-let basicPrice = 10000, year = 2019, km = 49000, security = true , elektro = false , climate = true;
+let basicPrice = 10000, year = 2019, km = 49000, hasSecurity = Boolean , hasElektro = Boolean , hasClimate = Boolean;
 let newSum = 0;
 if(year>=2019&&year<=2020){
     newSum = basicPrice/100*10;
@@ -6,13 +6,13 @@ if(year>=2019&&year<=2020){
 if(km>=50000&&km<=100000){
     newSum -= (basicPrice/100*5);
 }
-if(security == true ){
+if(hasSecurity == true ){
     newSum += (basicPrice/100*8);
 }
-if(climate == true){
+if(hasClimate == true){
     newSum += (basicPrice/100*7);
 }
-if(elektro == true ){
+if(hasElektro == true ){
     newSum += (basicPrice/100*15);
 }
 console.log("Base price was: " + basicPrice + ", New price is " + (newSum+basicPrice))

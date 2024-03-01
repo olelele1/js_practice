@@ -1,21 +1,16 @@
-/*let a=5
-let b=++a;
-
-console.log(a + "a");
-console.log(b + "b"); */
-function doxidCalc(doxid){
-    let newDoxid;
-    if(doxid<=10000){
-        newDoxid = doxid/100*5 + ",podatok %5";
-    }else if(doxid>10000&&doxid<=50000){
-        newDoxid = doxid/100*10 + ",podatok %10";
-    }else if(doxid>50001&&doxid<=100000){
-        newDoxid = doxid/100*15 + ",podatok %15";
-    }else if(doxid>100001&&doxid<=200000){
-        newDoxid = doxid/100*20 + ",podatok %20";
-    }else if(doxid>200000){
-        newDoxid = doxid/100*25 + ",podatok %25";
+function revenueCalc(revenue){
+    let newRevenue;
+    if(revenue<=10000){
+        newRevenue = revenue - (revenue/100*5) + ",podatok %5";
+    }else if(revenue>10000&&revenue<=50000){
+        newRevenue = revenue - (revenue/100*10) + ",podatok %10";
+    }else if(revenue>50001&&revenue<=100000){
+        newRevenue = revenue - (revenue/100*15) + ",podatok %15";
+    }else if(revenue>100001&&revenue<=200000){
+        newRevenue = revenue - (revenue/100*20) + ",podatok %20";
+    }else if(revenue>200000){
+        newRevenue = revenue - (revenue/100*25) + ",podatok %25";
     }
-    return "old doxid:" + doxid + "," + "new doxid:" + newDoxid;
+    return "old doxid:" + revenue + "," + "new doxid:" + newRevenue;
 }
-console.log(doxidCalc(278914));
+console.log(revenueCalc(10000));
