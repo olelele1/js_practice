@@ -6,3 +6,4 @@ function newString(str) {
   return strUpper;
 }
 console.log(newString("Hello world"));
+
