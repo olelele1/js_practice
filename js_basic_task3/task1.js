@@ -1,11 +1,8 @@
-let string = "Hello World";
-let eng = 'A, E, I, O, U, Y';
-function  newString(){
-    for( let i = 0; i<string.length;i++){
-        if(string[i].indexOf() == eng )
-        string[i] = "*";
-    }
-    return string;
+function newString(str) {
+    let strUpper = str.toUpperCase();
+  for (let i = 0; i < strUpper.length; i++) {
+    strUpper = strUpper.replace(/[AEOUIY]/g, "*");
+  }
+  return strUpper;
 }
-newString(string);
-console.log(string);
+console.log(newString("Hello world"));
