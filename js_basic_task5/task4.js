@@ -1,4 +1,4 @@
-let math = 1;
+let math = 100;
 let literature = 53;
 let physics = 79;
 function rating(...numbers) {
@@ -17,6 +17,6 @@ function rating(...numbers) {
       : total > 69 && total < 89
       ? "Good performance"
       : "Very good performance";
-  return message;
+  return message + ", Your value is: " + total ;
 }
 console.log(rating(math, literature, physics));
