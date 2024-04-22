@@ -27,4 +27,5 @@ export default class Cat extends Animal{
     printCatInfo(){
         return `Our cat is ${this.years} y/o and his name is ${this.name} , he is ${this.type} and ${this.color} ${this.breed} cat , he is nervous , and ${this.ability} everything`
     }
+    
 }
